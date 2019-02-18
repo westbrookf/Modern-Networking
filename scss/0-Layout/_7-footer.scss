@@ -1,0 +1,48 @@
+#footContainer {
+  width: 100%;
+  background-color: #505050;
+  @include Display(row, space-between, unset);
+  //Responsive
+  @include Mobile {
+    @include Display(column, center, center);
+  }
+}
+.copyright {
+  margin-top: 20px;
+  margin-left: 40px;
+  p {
+    font-size: 20px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: $bgFont;
+    //responsive
+    @include Tablet {
+      font-size: 16px;
+    }
+    @include Mobile {
+      font-size: 14px;
+    }
+  }
+  //copy right responsive
+  @include Mobile {
+    margin-left: 0px;
+  }
+}
+#footerMenu {
+  @include Display(row, space-between, unset);
+  padding: 20px 30px 20px 50px;
+  a {
+    font-size: 20px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: $bgFont;
+    padding-right: 20px;
+    //Responsive
+    @include Tablet {
+      font-size: 16px;
+    }
+    @include Mobile {
+      padding-right: 10px;
+    }
+  }
+}

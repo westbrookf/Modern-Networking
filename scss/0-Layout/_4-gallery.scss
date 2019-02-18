@@ -1,0 +1,48 @@
+.galleryIntro {
+  width: 100%;
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 40px;
+  background-color: $grey;
+  padding: 20px 0 20px 0;
+  h3 {
+    font-size: 20px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: $primFont;
+    padding-bottom: 6px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: lighter;
+    color: $primFont;
+  }
+}
+.galleryContainer {
+  width: 100%;
+  margin: auto;
+}
+.mainImg {
+  img {
+    width: 100%;
+  }
+}
+.imgs {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  cursor: pointer;
+  img {
+    width: 100%;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}

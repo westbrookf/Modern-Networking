@@ -1,0 +1,140 @@
+.serviceIntro {
+  width: 100%;
+  text-align: center;
+  margin-top: -40px;
+  background-color: $grey;
+  padding: 20px 0 20px 0;
+  h3 {
+    font-size: 20px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: $primFont;
+    padding-bottom: 6px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: lighter;
+    color: $primFont;
+  }
+}
+.servContain {
+  @include Display(row, space-between, center);
+  //Responsive
+  @include Tablet {
+    flex-direction: column;
+  }
+}
+#needHelp {
+  margin: 0 0 0 50px;
+  height: 300px;
+  width: 360px;
+  @include Background(url(../imgs/skyview.jpg));
+  border-radius: 10px;
+  text-align: left;
+  h4 {
+    font-size: 30px;
+    font-weight: lighter;
+    color: $bgFont;
+    text-transform: capitalize;
+    padding: 50px 0 14px 20px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: lighter;
+    color: $bgFont;
+    padding-left: 20px;
+  }
+  //Need Help Responsive
+  @include Laptop {
+    width: 300px;
+  }
+  @include Tablet {
+    width: 400px;
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+  @include Mobile {
+    width: 340px;
+  }
+}
+.helpContact {
+  padding-top: 20px;
+  @include Display(unset, unset, unset);
+  .fa-envelope {
+    font-size: 24px;
+    color: $bgFont;
+    margin-left: 20px;
+  }
+  a {
+    font-size: 20px;
+    font-weight: lighter;
+    color: $bgFont;
+  }
+}
+#ourListContain {
+  padding: 40px 50px 40px 0;
+  width: 596px;
+  //Responsive
+  @include Laptop {
+    padding-right: 0px;
+    width: 500px;
+  }
+  @include Mobile {
+    width: 340px;
+  }
+}
+.option {
+  padding-bottom: 40px;
+  h3 {
+    font-size: 30px;
+    font-weight: lighter;
+    color: $primFont;
+    text-transform: capitalize;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 6px 0 6px 0;
+    color: $prime-Blue;
+    text-transform: capitalize;
+  }
+  //Option Responsive
+  @include Tablet {
+    text-align: center;
+  }
+}
+#leadingSource {
+  height: 50vh;
+  width: 100%;
+  @include Background(url(../imgs/blueprint.jpg));
+  background-attachment: fixed;
+}
+#networkTips {
+  height: 20vh;
+  width: 100%;
+  margin: 80px 0 80px 0;
+}
+.tipRow {
+  @include Display(row, space-evenly, center);
+  text-align: center;
+  padding-top: 20px;
+}
+.tipIcon {
+  font-size: 40px;
+  color: #2198fa;
+  padding-bottom: 4px;
+}
+.tips {
+  width: 200px;
+  h3 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: $primFont;
+    text-transform: capitalize;
+  }
+  p {
+    font-size: 14px;
+    font-weight: lighter;
+    color: $primFont;
+  }
+}

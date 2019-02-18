@@ -1,0 +1,145 @@
+#aboutUsIntroContain {
+  width: 100%;
+  background-color: #e7e7e77c;
+  @include Display(row, unset, unset);
+  margin-top: -40px;
+  //Responsive
+  @include Tablet {
+    flex-direction: column;
+    padding-bottom: 60px;
+  }
+}
+#inspireCreate {
+  padding: 50px 0 0 50px;
+  width: 446px;
+  h3 {
+    font-size: 30px;
+    font-weight: lighter;
+    color: $primFont;
+    text-transform: capitalize;
+    padding-bottom: 12px;
+  }
+  strong {
+    font-size: 24px;
+    font-weight: lighter;
+    color: $prime-Blue;
+  }
+  .paraOne,
+  .paraTwo {
+    font-size: 18px;
+    font-weight: lighter;
+    color: $primFont;
+    line-height: 22px;
+  }
+  .paraOne {
+    padding-bottom: 10px;
+  }
+  //Inspire Create Responsive
+  @include Mobile {
+    width: 300px;
+  }
+}
+#rightGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 200px;
+  //Responsive
+  @include Laptop {
+    padding-left: 0px;
+  }
+  //Responsive
+  @include Tablet {
+    display: none;
+  }
+}
+.box {
+  border: 10px solid #2198fa;
+  border-radius: 50%;
+  margin: 40px;
+  padding: 40px;
+  height: 90px;
+  width: 90px;
+}
+#miniGalContain {
+  width: 100%;
+  margin-top: 40px;
+}
+.miniText {
+  text-align: center;
+  padding-bottom: 20px;
+  h3 {
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: $prime-Blue;
+    width: 144px;
+    padding-left: 580px;
+    //Responsive
+    @include Laptop {
+      padding-left: 380px;
+    }
+    @include Tablet {
+      padding-left: 280px;
+    }
+    @include Mobile {
+      padding-left: 110px;
+    }
+  }
+  p {
+    font-size: 14px;
+    font-weight: lighter;
+    color: $primFont;
+  }
+}
+.miniGal {
+  @include Display(row, space-between, center);
+  overflow-x: hidden;
+  img {
+    height: 300px;
+    width: 330px;
+    //Responsive
+    @include Laptop {
+      width: 230px;
+    }
+    @include Tablet {
+      width: 340px;
+    }
+    @include Mobile {
+      padding-left: 20px;
+    }
+  }
+  //miniGal Responsive
+  @include Tablet {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+  }
+  @include Mobile {
+    grid-template-columns: auto;
+  }
+}
+.workTogether {
+  margin-top: 20px;
+  text-align: center;
+  padding: 40px 0 40px 0;
+  margin-top: 60px;
+  background-color: $grey;
+  h3 {
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: $prime-Blue;
+  }
+}
+.wrkTogetherBtn {
+  margin-top: 20px;
+  a {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #505050;
+    text-transform: capitalize;
+    border: 1px solid #2198fa;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+}

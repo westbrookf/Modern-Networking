@@ -1,0 +1,303 @@
+#mainShowCase {
+  @include Background(url(../imgs/showcase1.jpg));
+  background-attachment: fixed;
+  height: 50vh;
+  width: 100%;
+  margin-top: -52px;
+}
+.welcomeText {
+  padding-top: 180px;
+  margin-left: 60px;
+  h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: $prime-Blue;
+    //Responsive
+    @include Mobile {
+      font-size: 30px;
+    }
+  }
+  p {
+    font-size: 18px;
+    font-weight: lighter;
+    color: $bgFont;
+    padding-top: 6px;
+  }
+  .showcaseBtns {
+    padding-top: 20px;
+    a {
+      @include globalBtns;
+    }
+  }
+  //Welcome Text Responsive
+  @include Mobile {
+    margin-left: 10px;
+  }
+}
+#aboutUs {
+  width: 100%;
+  @include Display(row, space-evenly, center);
+  margin-top: 60px;
+  //Responsive
+  @include Mobile {
+    @include Display(column, center, center);
+  }
+}
+.contentPhoto {
+  width: 500px;
+  img {
+    width: 500px;
+    //Responsive
+    @include Laptop {
+      width: 400px;
+    }
+    @include Tablet {
+      width: 300px;
+      padding-left: 20px;
+    }
+    @include Mobile {
+      width: 200px;
+    }
+  }
+  //Content Photo Responsive
+  @include Mobile {
+    width: 250px;
+  }
+}
+.contentText {
+  width: 500px;
+  h3 {
+    font-size: 30px;
+    font-weight: lighter;
+    color: $prime-Blue;
+    text-transform: capitalize;
+  }
+  .sen1,
+  .sen2 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: $primFont;
+    padding-top: 20px;
+    //Responsive
+    @include Tablet {
+      font-size: 18px;
+    }
+  }
+  //Content Text Responsive
+  @include Laptop {
+    width: 400px;
+  }
+  @include Tablet {
+    padding-right: 20px;
+  }
+  @include Mobile {
+    width: 300px;
+    text-align: center;
+  }
+}
+#networkRow {
+  margin-top: 40px;
+  width: 100%;
+  @include Display(row, space-evenly, center);
+  background-color: $grey;
+}
+.netBlock {
+  height: 120px;
+  width: 200px;
+  text-align: center;
+}
+.netIcon {
+  font-size: 24px;
+  padding-top: 40px;
+  color: $prime-Blue;
+}
+.itemText {
+  h4 {
+    font-size: 22px;
+    font-weight: lighter;
+    color: $primFont;
+    text-transform: capitalize;
+  }
+}
+#videoOverlay {
+  height: 40vh;
+  width: 100%;
+  margin-top: 40px;
+}
+.tourContain {
+  height: 40vh;
+  width: 90%;
+  position: absolute;
+  background-color: #333232c5;
+  text-align: center;
+  z-index: 2;
+  h2 {
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: $prime-Blue;
+    padding-top: 120px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: lighter;
+    color: $bgFont;
+    padding-top: 6px;
+  }
+  .officeTourBtn {
+    padding-top: 20px;
+    a {
+      @include globalBtns;
+    }
+  }
+}
+#videoBackground {
+  width: 100%;
+  height: inherit;
+  object-fit: fill;
+}
+//Price Block
+#pricesContainer {
+  width: 100%;
+}
+.priceHead {
+  h2 {
+    font-size: 40px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 40px;
+  }
+}
+//Price Block globals
+#priceBlocks {
+  padding-top: 40px;
+  @include Display(row, space-evenly, center);
+  //Responsive
+  @include Tablet {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  @include Mobile {
+    grid-template-columns: auto;
+  }
+}
+.Block {
+  height: 482px;
+  width: 276px;
+  border: 1px solid #e7e7e7;
+  border-radius: 6px;
+  box-shadow: 4px 4px 16px #c7c7c7;
+  ul {
+    padding: 10px;
+  }
+  li {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #333232c5;
+    padding-top: 12px;
+    padding-left: 6px;
+    //Responsive
+    @include Laptop {
+      font-size: 16px;
+    }
+  }
+  //Block Responsive
+  @include Tablet {
+    margin-top: 20px;
+  }
+}
+.title {
+  font-size: 30px;
+  font-weight: 200;
+  text-transform: capitalize;
+  color: $bgFont;
+  padding: 12px 30px;
+}
+.monthly {
+  font-size: 18px;
+  font-weight: lighter;
+  color: $bgFont;
+  padding-left: 30px;
+}
+//Price Header & subHeader Background Color
+.mail {
+  background-color: #2198fab7;
+}
+.mailPriced {
+  background-color: #2198fa;
+}
+.travel {
+  background-color: #85bb65b7;
+}
+.travelerPriced {
+  background-color: #85bb65;
+}
+.personal {
+  background-color: #505050b7;
+}
+.personalPriced {
+  background-color: #505050;
+}
+.private {
+  background-color: #2198fab7;
+}
+.privatePriced {
+  background-color: #2198fa;
+}
+#galleryBar {
+  margin-top: 40px;
+  background-color: #e7e7e77c;
+  padding: 20px 50px 20px 50px;
+  @include Display(row, space-between, unset);
+  //Responsive
+  @include Mobile {
+    @include Display(column, center, center);
+  }
+}
+.galleryText {
+  h3 {
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: $prime-Blue;
+    //Responsive
+    @include Mobile {
+      font-size: 20px;
+    }
+  }
+  p {
+    font-size: 18px;
+    font-weight: lighter;
+    color: $primFont;
+    //Responsive
+    @include Mobile {
+      font-size: 16px;
+    }
+  }
+  //Gallery Text Responsive
+  @include Mobile {
+    text-align: center;
+  }
+}
+.galleryBtn {
+  padding-top: 20px;
+  a {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #505050;
+    text-transform: capitalize;
+    border: 1px solid #2198fa;
+    border-radius: 6px;
+    padding: 10px 20px;
+    //Responsive
+    @include Mobile {
+      font-size: 16px;
+    }
+  }
+  //Gallery Btn Responsive
+  @include Mobile {
+    padding-top: 10px;
+  }
+}

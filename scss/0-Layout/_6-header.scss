@@ -1,0 +1,46 @@
+#navContain {
+  height: 20vh;
+  width: 100%;
+  @include Display(row, space-between, unset);
+  //Responsive
+  @include Mobile {
+    @include Display(column, unset, unset);
+  }
+}
+.logo {
+  width: 200px;
+  margin-top: -54px;
+  margin-left: 60px;
+  //Responsive
+  @include Mobile {
+    display: none;
+  }
+}
+.Nav {
+  padding-top: 40px;
+  padding-right: 60px;
+  a {
+    font-size: 20px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: $primFont;
+    margin-left: 10px;
+    //Responsive
+    @include Tablet {
+      font-size: 16px;
+    }
+    @include Mobile {
+      font-size: 14px;
+    }
+  }
+  a:hover {
+    color: $prime-Blue;
+  }
+  //Nav Responsive
+  @include Mobile {
+    padding-top: 40px;
+    padding-right: 0px;
+    width: 320px;
+    margin-left: 30px;
+  }
+}

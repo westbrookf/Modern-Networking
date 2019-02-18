@@ -1,0 +1,41 @@
+//Flex
+@mixin Display($fDirection, $justContent, $itemAligned) {
+  display: flex;
+  flex-direction: $fDirection;
+  justify-content: $justContent;
+  align-items: $itemAligned;
+}
+//All Buttons
+@mixin globalBtns() {
+  font-size: 18px;
+  font-weight: lighter;
+  color: $bgFont;
+  background-color: $prime-Blue;
+  padding: $Btn-Pad;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+//background showcase
+@mixin Background($showPhto) {
+  background: linear-gradient(to right, #333232c5, #333232c5), $showPhto;
+  background-position: center;
+  background-size: cover;
+}
+//Responsive Mixins
+@mixin Laptop {
+  @media only screen and(max-width: 1024px) {
+    @content;
+  }
+}
+//Tablet
+@mixin Tablet {
+  @media only screen and(max-width: 768px) {
+    @content;
+  }
+}
+//Mobile
+@mixin Mobile {
+  @media only screen and(max-width: 425px) {
+    @content;
+  }
+}
